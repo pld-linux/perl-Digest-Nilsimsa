@@ -6,7 +6,7 @@
 %define	pdir	Digest
 %define	pnam	Nilsimsa
 Summary:	Digest::Nilsimsa - Perl version of nilsimsa code
-Summary(pl):	Digest::Nilsimsa - werja perlowa kodu nilsimsa
+Summary(pl):	Digest::Nilsimsa - wersja perlowa kodu nilsimsa
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
 Release:	4
