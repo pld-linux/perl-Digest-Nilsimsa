@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Digest
-%define	pnam	Nilsimsa
+%define		pdir	Digest
+%define		pnam	Nilsimsa
 Summary:	%{pdir}::%{pnam} Perl module
 Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
 Summary(da):	Perlmodul %{pdir}::%{pnam}
@@ -18,10 +18,9 @@ Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
 Summary(sv):	%{pdir}::%{pnam} Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Digest-Nilsimsa
 Version:	0.06
 Release:	1
-# COPYING says LGPL, sources say GPL...
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -37,7 +36,7 @@ a wrapper around nilsimsa implementation in C by cmeclax.
 %description -l pl
 Sygnatura nilsimsa to statystyka wystêpowania n-gramów w danym
 tek¶cie. Jest to 256-bitowa liczba, przewa¿nie reprezentowana
-heksadecymalnie. Modu³ jest wrapperem na implementacjê w C, której
+szesnastkowo. Modu³ jest nak³adk± na implementacjê w C, której
 autorem jest cmeclax.
 
 %prep
@@ -57,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc README
 %{perl_sitearch}/%{pdir}/*.pm
 %dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
 %attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
