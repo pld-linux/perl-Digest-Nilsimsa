@@ -25,25 +25,27 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	perl >= 5
+BuildRequires:	perl-devel >= 5
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A nilsimsa signature is a statistic of n-gram occurance in a piece of
-text.  It is a 256 bit value usually represented in hex.  This module
-is a wrapper around nilsimsa implementation in C by cmeclax.
+text. It is a 256 bit value usually represented in hex. This module is
+a wrapper around nilsimsa implementation in C by cmeclax.
 
-# %description -l pl
-# TODO
+%description -l pl
+Sygnatura nilsimsa to statystyka wystêpowania n-gramów w danym
+tek¶cie. Jest to 256-bitowa liczba, przewa¿nie reprezentowana
+heksadecymalnie. Modu³ jest wrapperem na implementacjê w C, której
+autorem jest cmeclax.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
-%{__make}
+%{__make} OPTIMIZE="%{rpmcflags}"
 #%{__make} test
 
 %install
@@ -55,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc Changes README
 %{perl_sitearch}/%{pdir}/*.pm
 %dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
 %attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
