@@ -1,27 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	Nilsimsa
-Summary:	%{pdir}::%{pnam} Perl module
-Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
-Summary(da):	Perlmodul %{pdir}::%{pnam}
-Summary(de):	%{pdir}::%{pnam} Perl Modul
-Summary(es):	Módulo de Perl %{pdir}::%{pnam}
-Summary(fr):	Module Perl %{pdir}::%{pnam}
-Summary(it):	Modulo di Perl %{pdir}::%{pnam}
-Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul %{pdir}::%{pnam}
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
-Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(sv):	%{pdir}::%{pnam} Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
+Summary:	Digest::Nilsimsa - Perl version of nilsimsa code
+Summary(pl):	Digest::Nilsimsa - werja perlowa kodu nilsimsa
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
 Release:	3
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	08e940bd7f5d1167ef3fd1aa7ce234d7
