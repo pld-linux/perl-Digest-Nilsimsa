@@ -45,7 +45,7 @@ autorem jest cmeclax.
 %build
 %{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
-#%{__make} test
+#%%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
