@@ -20,12 +20,12 @@ Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,7 +43,8 @@ autorem jest cmeclax.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 #%%{__make} test
 
@@ -57,8 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/%{pdir}/*.pm
-%dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_sitearch}/auto/%{pdir}/%{pnam}/*.bs
+%{perl_vendorarch}/%{pdir}/*.pm
+%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
+%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
 %{_mandir}/man3/*
