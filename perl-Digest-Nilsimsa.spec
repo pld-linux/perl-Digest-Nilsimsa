@@ -23,7 +23,7 @@ Version:	0.06
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
