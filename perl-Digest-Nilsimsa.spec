@@ -10,7 +10,7 @@ Summary(fr):	Module Perl %{pdir}::%{pnam}
 Summary(it):	Modulo di Perl %{pdir}::%{pnam}
 Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul %{pdir}::%{pnam}
+Summary(nb):	Perlmodul %{pdir}::%{pnam}
 Summary(pl):	Modu³ perla %{pdir}::%{pnam}
 Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
 Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
