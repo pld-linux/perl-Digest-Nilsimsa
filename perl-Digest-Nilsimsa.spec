@@ -9,7 +9,7 @@ Summary:	Digest::Nilsimsa - Perl version of nilsimsa code
 Summary(pl):	Digest::Nilsimsa - werja perlowa kodu nilsimsa
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
