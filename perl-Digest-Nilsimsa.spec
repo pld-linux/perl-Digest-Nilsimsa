@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
