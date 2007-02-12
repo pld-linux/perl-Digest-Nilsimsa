@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	Nilsimsa
 Summary:	Digest::Nilsimsa - Perl version of nilsimsa code
-Summary(pl):	Digest::Nilsimsa - wersja perlowa kodu nilsimsa
+Summary(pl.UTF-8):   Digest::Nilsimsa - wersja perlowa kodu nilsimsa
 Name:		perl-Digest-Nilsimsa
 Version:	0.06
 Release:	4
@@ -23,10 +23,10 @@ A nilsimsa signature is a statistic of n-gram occurance in a piece of
 text. It is a 256 bit value usually represented in hex. This module is
 a wrapper around nilsimsa implementation in C by cmeclax.
 
-%description -l pl
-Sygnatura nilsimsa to statystyka wystêpowania n-gramów w danym
-tek¶cie. Jest to 256-bitowa liczba, przewa¿nie reprezentowana
-szesnastkowo. Modu³ jest nak³adk± na implementacjê w C, której
+%description -l pl.UTF-8
+Sygnatura nilsimsa to statystyka wystÄ™powania n-gramÃ³w w danym
+tekÅ›cie. Jest to 256-bitowa liczba, przewaÅ¼nie reprezentowana
+szesnastkowo. ModuÅ‚ jest nakÅ‚adkÄ… na implementacjÄ™ w C, ktÃ³rej
 autorem jest cmeclax.
 
 %prep
