@@ -56,5 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Digest/*.pm
 %dir %{perl_vendorarch}/auto/Digest/Nilsimsa
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/Nilsimsa/*.so
-%{perl_vendorarch}/auto/Digest/Nilsimsa/*.bs
 %{_mandir}/man3/*
