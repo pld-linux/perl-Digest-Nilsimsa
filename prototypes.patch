@@ -1,0 +1,10 @@
+--- Digest-Nilsimsa-0.06/nilsimsa.h.orig	2002-06-12 23:03:11.000000000 +0200
++++ Digest-Nilsimsa-0.06/nilsimsa.h	2025-07-27 23:04:03.177026493 +0200
+@@ -51,5 +51,7 @@
+ int accbuf(unsigned char *buf,int len,struct nsrecord *a);
+ void dprint(char *msg);
+ void filltran();
++void makecode(struct nsrecord *a);
++void clear(struct nsrecord *a);
+ 
+ #endif
